@@ -1,3 +1,5 @@
+//MAGIC 8 BALL EXERCISE 
+
 let userName = 'scot'
 
 userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
@@ -37,3 +39,27 @@ switch(randomNumber) {
 }
 
 console.log(`The magic eight ball says ${ eightBall }`);
+//////////////////////////
+/////////////////////////
+
+//Runner registration exercise 
+
+let raceNumber = Math.floor(Math.random() * 1000);
+
+const earlyRegister = true;
+
+const age = 18;
+
+if(earlyRegister && age > 18 ) {
+  raceNumber += 1000
+}
+
+if(earlyRegister && age > 18 ) {
+  console.log(`Competitor ${raceNumber} will begin the race at 9:30am.`)
+} else if (age > 18 && earlyRegister === false){
+  console.log(`Competitor ${raceNumber} will begin the race at 11:00am.`)
+} else if( age < 18) {
+  console.log(`Competitor ${raceNumber} will begin the race at 12:30am.`)
+} else if( age === 18) {
+  console.log(`Competitor ${raceNumber} will need to see the front desk!`)
+}
