@@ -62,4 +62,14 @@ if(earlyRegister && age > 18 ) {
   console.log(`Competitor ${raceNumber} will begin the race at 12:30am.`)
 } else if( age === 18) {
   console.log(`Competitor ${raceNumber} will need to see the front desk!`)
-}
+} 
+
+if(earlyRegister && age > 18 ) {
+    console.log(`Competitor ${raceNumber} will begin the race at 9:30am.`)
+  } else if (age > 18 && earlyRegister === false){
+    console.log(`Competitor ${raceNumber} will begin the race at 11:00am.`)
+  } else if( age < 18) {
+    console.log(`Competitor ${raceNumber} will begin the race at 12:30am.`)
+  } else if( age === 18) {
+    console.log(`Competitor ${raceNumber} will need to see the front desk!`)
+  } 
